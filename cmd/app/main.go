@@ -15,6 +15,7 @@ import (
 
 func main() {
 	log.Printf("Server started")
+	log.Println("=^.^=")
 
 	PetApiService := service.NewPetApi(repo.NewPetRepoInmem())
 	PetApiController := openapi.NewPetApiController(PetApiService)
